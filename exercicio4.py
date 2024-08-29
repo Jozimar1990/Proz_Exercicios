@@ -20,7 +20,7 @@ while op != 0:
                 else:
                     print("Você errou! O número sorteado é maior")
                 erros +=1
-
+            #tratando o erro do usuário
             while op != 1 or op != 0:
                 try:
                     op = int(input('''Deseja continuar? 
@@ -36,6 +36,7 @@ while op != 0:
                             Opção incorreta!
                             1 - Continuar
                             2 - Sair''')
+                    
     except ValueError:
         print("Número inválido")
 
@@ -43,3 +44,4 @@ print(f'''
 Até mais!
       Você acertou {acertos} vezes
       Você errou {erros} vezes''')
+print("Boa sorte na próxima!")

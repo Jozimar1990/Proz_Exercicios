@@ -1,4 +1,4 @@
-respostas = ['piolho']
+respostas = ["piolho", "teste"]
 print('''
 Bem vindo!
 Preparamos uma pergunta para você.

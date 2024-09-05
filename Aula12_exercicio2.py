@@ -11,4 +11,3 @@ Preparamos uma pergunta para você.
 for i, pergunta in enumerate(perguntas):
     resposta = input(f'{pergunta}').lower().replace("ã", "a").replace('é', 'e').replace('ú', 'u').replace('í','i').replace('ç', 'c').replace('à', 'a').replace('â', 'a')
     print("Acertou!") if resposta == respostas[i] else print("Errou!")
-

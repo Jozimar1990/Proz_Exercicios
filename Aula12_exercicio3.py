@@ -30,4 +30,4 @@ while  (i <= len(perguntas)):
         else:
             i += 1
 
-print(f"Você obteve {ponto} pontos")
+print(f"Você obteve {ponto} pontos, mais sorte da próxima")

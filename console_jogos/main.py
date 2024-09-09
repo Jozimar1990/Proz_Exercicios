@@ -15,4 +15,11 @@ opcao = input(
 )
 
 match opcao:
-    case "1": jokenpo
+    case "1":
+        jokenpo()
+    case "2":
+        advinhacao()
+    case "3":
+        quiz()
+    case _:
+        print("opção incorreta!")

@@ -1,25 +1,19 @@
 from advinhacao import advinhacao
 from jokenpo import jokenpo
 from quiz import quiz
+from verifica import verificaMenu
 
-opcao = input(
-    '''
-    Bem vindos ao console de jogos em Python!
-    
-    Escolha uma das opções abaixo:
-    1 - Jokepon
-    2 - Advinhação
-    3 - Quiz
-    0 - Sair
-    '''
-)
+opcao = 1
 
-match opcao:
-    case "1":
-        jokenpo()
-    case "2":
-        advinhacao()
-    case "3":
-        quiz()
-    case _:
-        print("opção incorreta!")
+while opcao != "0":
+    opcao = verificaMenu()
+
+    match opcao:
+        case "1":
+            jokenpo()
+        case "2":
+            advinhacao()
+        case "3":
+            quiz()
+        case "0":
+            print("Até a próxima!")

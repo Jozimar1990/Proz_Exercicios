@@ -24,7 +24,7 @@ for i, pergunta in enumerate(perguntas):
         ponto -= 1
         outra_tentativa = input("Deseja tentar novamente? 1 - SIM | 0 - NAO")
         if outra_tentativa == '1':
-            
+            None
         else:
             i += 1
 
